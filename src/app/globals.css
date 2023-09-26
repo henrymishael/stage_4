@@ -6,6 +6,7 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  scroll-behavior: smooth;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,11 +18,62 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: #fff;
+  scroll-behavior: smooth;
 }
+
+.tend:hover {
+  background-color: #4831d4;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  transform: translateX(0%);
+  animation-delay: 300ms;
+}
+
+
+
+@keyframes tend {
+  0%{
+      transform : translateX(0%);
+  }
+  100% {
+      transform: translateX(100%);
+  }
+}
+.bounce:hover{
+  animation: bounce 1s ;
+  
+  animation-delay: 200ms;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-3%);
+    animation-timing-function: ease-in
+  }
+  50% {
+    transform: translateY(0);
+    animation-timing-function: ease-out
+  }
+}
+
+.slide-in {
+  animation: slide-in 2.5s ease-out forwards,
+   
+
+}
+@keyframes slide-in {
+  from {
+      transform: translateX(100%);
+      opacity: 0;
+      
+
+  }
+  to {
+      transform: translateX(0%);
+      opacity: 1;
+  }
+}
+
+
