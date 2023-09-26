@@ -11,52 +11,30 @@ import cross from '../../public/svg/cross.svg'
 import dotted from '../../public/svg/dotted.svg'
 import ellipse from '../../public/svg/ellipse.svg'
 import { useEffect, useRef, useState } from 'react'
+import LocomotiveScroll from 'locomotive-scroll';
 
 
 
 export default function Home() {
 
-  const [activeSection, setActiveSection] = useState(1);
-
-  const section1Ref = useRef(null);
-  const section2Ref = useRef(null);
-  const section3Ref = useRef(null);
-  const section4Ref = useRef(null);
-
-
   useEffect(() => {
-    const handleScroll = () => {
-      console.log('Scrolling')
-      const offset = window.innerHeight / 2;
+    const scroll = new LocomotiveScroll({
+      el: document.querySelector('[data-scroll-container]'),
+      smooth: true
+  });
+  }, [])
   
-      if (section1Ref.current && section1Ref.current.getBoundingClientRect().top < offset) {
-        setActiveSection(1);
-      } else if (section2Ref.current && section2Ref.current.getBoundingClientRect().top < offset) {
-        setActiveSection(2);
-      } else if (section3Ref.current && section3Ref.current.getBoundingClientRect().top < offset) {
-        setActiveSection(3);
-      } else if (section4Ref.current && section4Ref.current.getBoundingClientRect().top < offset) {
-        setActiveSection(4);
-      }
-    };
-  
-    window.addEventListener('scroll', handleScroll);
-  
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
 
   return (
-    <div className='relative  w-[100vw] '>
+    <div  className='relative  w-[100vw] '>
       <header className=''>
         <Header/>
       </header>
-      <main className=''>
-        <Section1 iref={section1Ref} />
-        <Section2 ref={section2Ref} />
-        <Section3 ref={section3Ref} />
-        <Section4 ref={section4Ref} />
+      <main data-scroll-container className=''>
+        <Section1 data-scroll-section/>
+        <Section2 data-scroll-section/>
+        <Section3 data-scroll-section/>
+        <Section4 data-scroll-section/>
       </main>
       <footer className=''>
         <Footer/>
