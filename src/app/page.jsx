@@ -58,7 +58,7 @@ export default function Home() {
         <Section3 ref={section3Ref} />
         <Section4 ref={section4Ref} />
       </main>
-      <footer className='xsm:hidden md:block'>
+      <footer className=''>
         <Footer/>
       </footer>
       <Image className='absolute top-[300px] right-[200px] ' src={cross}/>

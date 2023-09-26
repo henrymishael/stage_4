@@ -8,15 +8,21 @@ import cover from '../../../public/svg/cover.png'
 
 export const Section4 = () => {
   return (
-    <section id='section4' className='w-[100vw] h-[100vh] bg-[#f9f9f9] px-20 pt-24 pb-16'>
-        <div className='w-[100%] h-[100%] bg-white flex flex-row'>
-            <article className=' flex flex-col justify-center gap-6 px-12 border-r-[#4831d4] border-2 border-solid outline-none w-[50%] border-white '>
-                <h2 className='text-[42px] leading-[46px] text-[#4831d4] font-bold'>I build & <br /> design stuff</h2>
+    <section id='section4' className='w-[100vw] xsm:min-h-[100vh] md:h-[100vh] bg-[#f9f9f9] md:px-20 md:pt-24 md:pb-16'>
+        <div className='w-[100%] h-[100%] bg-white flex md:flex-row xsm:flex-col justify-center items-center'>
+            <article className='h-[100%]  xsm:hidden  xsm:border-none md:flex flex-col  justify-center  gap-6 px-12 md:border-r-[#4831d4] md:border-2 md:border-solid outline-none w-[50%] border-white   '>
+                <h2 className='text-[42px] leading-[46px]   text-[#4831d4] font-bold'>I build & <br /> design stuff</h2>
                 <p className=' text-[#3d155f] text-[21px] leading-[28px]'>Web apps <br /> and experimentals</p>
                 <Button 
                 text='SEE MY WORK' />
             </article>
-            <article className=' flex flex-wrap justify-center items-center md:gap-4 lg:gap-12 px-6 outline-none w-[50%]'>
+            <article className='md:hidden xsm:border-none flex flex-col justify-center gap-6 px-12 md:border-r-[#4831d4] md:border-2 md:border-solid outline-none w-[100%] border-white '>
+                <h2 className='md:text-[42px] md:leading-[46px] xsm:text-[30px] xsm:leading-[30px] text-[#4831d4] font-bold'>I build & design stuff</h2>
+                <p className=' text-[#3d155f] text-[21px] leading-[28px]'>Web apps and experimentals</p>
+                <Button 
+                text='SEE MY WORK' />
+            </article>
+            <article className=' flex flex-wrap justify-center items-center md:gap-4 lg:gap-8 xsm:gap-12 px-6 outline-none md:w-[50%] xsm:w-[100%] xsm:mt-6'>
                 <div className=' bg-[#f9f8fd] w-[200px] h-[200px]'>
                     <figure className='h-[150px] w-[200px] bg-white '>
                         <Image className='w-[200px] h-[150px] ' src={food} />

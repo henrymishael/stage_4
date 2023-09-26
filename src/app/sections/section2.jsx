@@ -30,7 +30,7 @@ export const Section2 = () => {
                 </span>
             </span>
             <span className='w-[80%] flex flex-col gap-3'>
-            <h2 className='md:text-[52px] md:leading-[58px] xsm:text-[30px] xsm:leading:[32px] text-[#4831d4] font-bold '>Engineering</h2>
+            <h2 className='md:text-[52px] md:leading-[58px] xsm:text-[28px] xsm:leading:[32px] text-[#4831d4] font-bold '>Engineering</h2>
             <p className='text-[#3d155f] text-[14px] leading-[24px] font-medium'>In building JavaScript applications, I'm equipped with just the right tools, and can absolutely function independently of them to deliver fast, resilient solutions optimized for scale — performance and scalabilty are priorities on my radar</p>
             </span>
         </article>
