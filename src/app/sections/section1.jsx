@@ -11,7 +11,7 @@ export const Section1 = () => {
                 <h2 className='md:text-[58px] md:leading-[63px] xsm:text-[30px] text-[#ccf381] font-bold'>FrontEnd <br /> Developer.</h2>
                 <p className='text-white text-[17px] leading-[27px] xsm:hidden md:block'>I like to craft solid and scalable frontend products <br /> with great user experiences.</p>
                 <p className='text-white text-[17px] leading-[27px] md:hidden'>I like to craft solid and scalable frontend products with great user experiences.</p>
-                <div className='mt-12 w-[70%] font-medium text-[12.5px] leading-[18.5px] text-[#ccf381] justify-end flex flex-row gap-16 xsm:w-[100%] md:w-auto'>
+                <div className='mt-12 w-[70%] font-medium text-[12.5px] leading-[18.5px] text-[#ccf381] justify-end flex flex-row gap-16 xsm:w-[100%]  md:w-[70%] '>
                     <h5>Highly Skilled at progressive enhancement, design systems & UI Engineering</h5>
                     <h5>Proven experience building successful products for clients across several countries</h5>
                 </div>
