@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react'
 import name from '../../../public/svg/mine.svg'
 import menu from '../../../public/svg/Ham.svg'
 import short from '../../../public/svg/ooo.svg'
+import ham from '../../../public/svg/ham1.svg'
 import Image from 'next/image'
 
 export const Header = () => {
@@ -41,11 +42,12 @@ export const Header = () => {
   };
 
   return (
-    <div className={`fixed flex flex-row justify-between w-[100%] items-center px-12  z-[10] top-0 h-[90px] ${scrolling ? 'bg-transparent ' : 'bg-transparent'}`}>
+    <div className={`fixed flex flex-row justify-between w-[100vw] items-center px-12  z-[10] top-0 h-[90px] ${scrolling ? 'bg-transparent ' : 'bg-transparent'}`}>
         <Image className={`${scrolling ? 'hidden' : ''} slide-in`} src={name} />
         <Image className={`${scrolling ? 'block' : 'hidden'} slide-in`} src={short} />
         <span className='relative'>
-            <Image onClick={toggleMenu} className={`${scrolling ? 'bg-inherit' : 'bg-[#4831d4'} `} src={menu} />
+            <Image onClick={toggleMenu} className={`${scrolling ? 'bg-inherit' : 'bg-[#4831d4]'} xsm:hidden md:block `} src={menu} />
+            <Image onClick={toggleMenu} className={`${scrolling ? 'bg-inherit' : 'bg-[#4831d4]'}  `} src={ham} />
             {isOpen && (<div className='absolute w-[300px] h-[400px] bg-white flex items-center justify-center  right-0'>
                 <h2 className='text-[#4831d4]'>Coming soon!!!</h2>
             </div>)}

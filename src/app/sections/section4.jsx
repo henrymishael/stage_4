@@ -16,7 +16,7 @@ export const Section4 = () => {
                 <Button 
                 text='SEE MY WORK' />
             </article>
-            <article className=' flex flex-wrap justify-center items-center gap-12 px-6 outline-none w-[50%]'>
+            <article className=' flex flex-wrap justify-center items-center md:gap-4 lg:gap-12 px-6 outline-none w-[50%]'>
                 <div className=' bg-[#f9f8fd] w-[200px] h-[200px]'>
                     <figure className='h-[150px] w-[200px] bg-white '>
                         <Image className='w-[200px] h-[150px] ' src={food} />
