@@ -16,8 +16,8 @@ export const Section4 = () => {
                 <Button 
                 text='SEE MY WORK' />
             </article>
-            <article className='md:hidden xsm:border-none flex flex-col justify-center gap-6 px-12 md:border-r-[#4831d4] md:border-2 md:border-solid outline-none w-[100%] border-white '>
-                <h2 className='md:text-[42px] md:leading-[46px] xsm:text-[30px] xsm:leading-[30px] text-[#4831d4] font-bold'>I build & design stuff</h2>
+            <article className='md:hidden xsm:border-none flex flex-col justify-center items-center gap-6 px-12 md:border-r-[#4831d4] md:border-2 md:border-solid outline-none w-[100%] border-white mt-4 '>
+                <h2 className='md:text-[42px] md:leading-[46px] xsm:text-[30px] xsm:leading-[30px] text-[#4831d4] font-bold text-center'>I build & design stuff</h2>
                 <p className=' text-[#3d155f] text-[21px] leading-[28px]'>Web apps and experimentals</p>
                 <Button 
                 text='SEE MY WORK' />
